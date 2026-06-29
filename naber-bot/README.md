@@ -126,33 +126,16 @@ Kullanıcıların adreslerini kaydetmesini kolaylaştıran entegre rehber yönet
 
 ## 📸 Ekran Görüntüleri ve Arayüz Galerisi
 
-GuíaOrbita (Naber Bot) uygulamasının tüm özelliklerini ve işlem akışını gösteren ekran görüntüleri galerisi:
+GuíaOrbita (Naber Bot) uygulamasının gereksinimlerini gösteren temel ekran görüntüleri:
 
-### 1. Cüzdan Bağlantısı ve Ana Panel
-Freighter bağlandığında, bot bakiyeyi çeker, üst çubuğu günceller ve işlem butonlarını aktif hale getirir:
-![Cüzdan Bağlantısı Ana Panel](./docs/chat-view.png)
+### 1. Cüzdan Bağlantısı ve Bakiye Gösterimi
+Freighter cüzdanı başarıyla bağlandığında üst çubukta cüzdan adresi ve bakiye güncellenir, bot kullanıcıyı bakiye hakkında bilgilendirir:
+![Cüzdan Bağlantısı ve Bakiye](./docs/chat-view.png)
 
-### 2. Doğal Dilde Bakiye Sorgulama
-Mevcut bakiyenizi sorguladığınızda botun verdiği yanıt (Dost canlısı modda):
-![Bakiye Sorgulama](./docs/balance-view.png)
-
-### 3. Hesap İşlem Geçmişi
-"Son İşlemler" tıklandığında cüzdanın son ödeme hareketlerinin listelenmesi ve gezgin linkleri:
-![Son İşlemler](./docs/history-view.png)
-
-### 4. Dinamik Ödeme Girişleri ve Onay Ekranı
-Ödeme başlatıldığında arayüzün "Ciddi/Teknik" moda geçişi, form ekranı ve onay adımı:
-![Teknik Mod ve Ödeme Girişi](./docs/technical-mode.png)
-![Ödeme Onay Ekranı](./docs/confirm-modal.png)
-
-### 5. Güvenli Freighter Cüzdan İmza Penceresi
-Transfer işlemi gönderildiğinde Freighter cüzdanının işlem detaylarıyla birlikte ekranda belirmesi:
+### 2. Güvenli Freighter Cüzdan İmza Penceresi
+Kullanıcı transferi onayladığında Freighter cüzdanı işlem detaylarıyla (tutar, ağ ücreti, testnet ağı) birlikte ekranda belirir:
 ![Freighter Onay Ekranı](./docs/freighter-popup.png)
 
-### 6. İyimser Önbellek ve Başarılı İşlem Bildirimi
-İşlem ağda onaylandığında botun Ledger ID'sini ve gezgin linkini sunması. İyimser önbellekleme sayesinde bakiye anında `9754.00 XLM` olarak güncellenir:
-![Başarılı Transfer](./docs/success-notification.png)
-
-### 7. Özel Adres Defteri ve Havalı Mod
-Adres defterine "Eymen" kişisinin başarıyla kaydedilmesi ve "Havalı/Sokak" modunun etkinleştirilmesi:
-![Adres Defteri ve Havalı Mod](./docs/address-book-saved.png)
+### 3. İşlem Sonucu Bildirimi ve StellarExpert Gezgin Bağlantısı
+İşlem onaylandıktan sonra bot kullanıcıya Ledger numarasını gösterir ve detaylı inceleme için tıklanabilir bir StellarExpert bağlantısı sunar:
+![Başarılı Transfer ve Gezgin Linki](./docs/success-notification.png)
