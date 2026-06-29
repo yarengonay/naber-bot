@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Renk tokenları */
+  --bg: #0b0d12;
+  --surface: #15181f;
+  --surface-raised: #1b1f29;
+  --border: #262b36;
+  --text-primary: #edeff3;
+  --text-secondary: #8b92a3;
+  --text-muted: #565d6e;
+  --accent: #6c5ce7;
+  --accent-soft: #6c5ce71a;
+  --accent-strong: #8478ff;
+  --success: #22c55e;
+  --success-soft: #22c55e1a;
+  --error: #ef4444;
+  --error-soft: #ef44441a;
+
+  /* Tipografi */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  background-image:
+    radial-gradient(circle at 20% 0%, #6c5ce714 0%, transparent 45%),
+    radial-gradient(circle at 90% 100%, #6c5ce70a 0%, transparent 50%);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, textarea {
+  font-family: inherit;
+}
+
+/* Erişilebilirlik: klavye odağı görünür kalsın */
+:focus-visible {
+  outline: 2px solid var(--accent-strong);
+  outline-offset: 2px;
+}
+
+/* Hareketi azalt tercihine uy */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 8px;
+}
